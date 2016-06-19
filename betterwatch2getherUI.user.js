@@ -45,6 +45,10 @@ $(document).ready(function() {
     $('#playlist-history').css('height', '100%');
     $('#client-container').css('padding-bottom', '0px');
 
+    
+    //Hide the cookies
+    $("#cookie-message").hide();
+    
     //Remove the like button.
     $('.like-button').remove();
     //Remove the feedback sticker.
