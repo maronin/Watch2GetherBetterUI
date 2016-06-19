@@ -18,8 +18,12 @@ if( typeof GM_addStyle != 'function' )
     style.type='text/css';
     document.getElementsByTagName('head')[0].appendChild(style);
 }
-    var minifiedCss = "#player-chat { position: relative !important; } #userbar-chat { height: 100% !important; } .chat-right {position: fixed !important; bottom: 0; right: 0; height: 100%; width: 380px !important; background: white; padding: 0px; } .ui.container { width: calc(100% - 380px); margin-left: 1px !important; margin-right: auto!important; } #playlist-history .bottom.attached.segment { height: calc(100% - 40px);} ";
-GM_addStyle(minifiedCss);
+    var minifiedCss = "#player-chat { position: relative !important; } #userbar-chat { height: 100% !important; } .chat-right {position: fixed !important; bottom: 0; right: 0; height: 100%; width: 380px !important; background: white; padding: 0px; } .ui.container { width: calc(100% - 380px); margin-left: 1px !important; margin-right: auto!important; } #playlist-history .bottom.attached.segment { height: calc(100% - 40px);} .ui.attached.menu { margin: 0 0px; width: calc(100%); }";
+    var playerBar = ".ui-slider-horizontal .ui-slider-handle { width: 4px;margin-left: 0px; height: 13px; margin: 0px; background: #969696; border-radius: 0px; top: 0px !important; border: none;  outline: 0;}";
+    var slider = " .ui-slider-range { background-color: #F12B24 !important; }";
+    GM_addStyle(minifiedCss);
+    GM_addStyle(slider);
+    GM_addStyle(playerBar);
 
 $(document).ready(function() {
 
@@ -55,6 +59,11 @@ $(document).ready(function() {
     $('.feedback-sticker').remove();
     //remove the footer.
     $('.footer').remove();
+    
+    
+    
+    //Custom player bar
+    $(".ui-slider-handle.ui-state-default.ui-corner-all").removeClass("ui-slider-handle");
 });
 
 function prependClass(ele, className) {
