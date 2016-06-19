@@ -18,7 +18,7 @@ if( typeof GM_addStyle != 'function' )
     style.type='text/css';
     document.getElementsByTagName('head')[0].appendChild(style);
 }
-    var minifiedCss = "#player-chat { position: relative !important; } #userbar-chat { height: 100% !important; } .chat-right {position: fixed !important; bottom: 0; right: 0; height: 100%; width: 380px !important; background: white; padding: 0px; } .ui.container { width: calc(100% - 380px); margin-left: 1px !important; margin-right: auto!important; } #playlist-history .bottom.attached.segment { height: calc(100% - 40px);} .ui.attached.menu { margin: 0 0px; width: calc(100%); }";
+    var minifiedCss = "#player-chat { position: relative !important; } #userbar-chat { height: 100% !important; } .chat-right {position: fixed !important; bottom: 0; right: 0; height: 100%; width: 380px !important; background: white; padding: 0px; } .ui.container { width: calc(100% - 380px); margin-left: 1px !important; margin-right: auto!important; } #playlist-history .bottom.attached.segment { height: calc(100% - 40px);} .ui.attached.menu { margin: 0 0px; width: calc(100%); } .ui.attached.segment { width: 100% !important; margin: 0 !important; }";
     var playerBar = ".ui-slider-horizontal .ui-slider-handle { width: 4px;margin-left: 0px; height: 13px; margin: 0px; background: #969696; border-radius: 0px; top: 0px !important; border: none;  outline: 0;}";
     var slider = " .ui-slider-range { background-color: #F12B24 !important; }";
     GM_addStyle(minifiedCss);
