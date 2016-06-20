@@ -9,7 +9,7 @@ Since I think the UI for watch2gether is not the best it can be, I made my own. 
 
 Screenshot
 NEW:
-![]({{site.baseurl}}/watch2getherUI.png)
+![](watch2getherUI.png)
 
 OLD:
-![]({{site.baseurl}}/watch2getherUI-old.png)
+![](watch2getherUI-old.png)
